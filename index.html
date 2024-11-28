@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie do Pana Jareckiego</title>
+    <script type="text/javascript">
+        function promcik(){
+            var pr = prompt("Podaj nazwę użytkownika:");
+            if (pr) {
+                alert("Witaj! "+ pr +" zarejestruj się i dołącz do nas");
+            }
+        }
+        function potwierdz(){
+            confirm("Użytkowniku czy jesteś gotowy by oglądać słodkie kotki?");
+        }
+        function kotki(){
+            window.open("https://pl.pinterest.com/search/pins/?q=cats&rs=typed")
+        }
+    </script>
+<style>
+    body {
+        background-color: blueviolet;
+    }
+    button {
+        border: none;
+        width: 200px;
+        height: 100px;
+        color:white;
+        background-color: rgb(64, 2, 122);
+    }
+    h1{
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Vanessa Borys 3f</h1>
+    <button onclick="promcik()">promcik i alert</button>
+    <button onclick="potwierdz()">potwierdzenie</button>
+    <button onclick="kotki()">window open</button>
+</body>
+</html>
